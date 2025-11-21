@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import Card from "../cards/Card";
+import Card from "../../common/Card";
 import { nganyas } from "../../../data/nganyaData";
 
 export default function Hero() {

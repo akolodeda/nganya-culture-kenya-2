@@ -1,10 +1,13 @@
 import React from "react";
-import merchandiseImg from "../../../assets/images/mood.jpg";
-import transportImg from "../../../assets/images/shirt-merchandise.jpg";
+import transportImg from "../../../assets/images/mood.jpg";
+import merchandiseImg from "../../../assets/images/shirt-merchandise.jpg";
 
 export default function AboutUs() {
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 sm:py-20 md:py-24 space-y-12 md:space-y-16">
+    <div
+      id="about"
+      className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 sm:py-20 md:py-24 space-y-12 md:space-y-16"
+    >
 
       {/* Header */}
       <section aria-labelledby="about-title" className="text-center">
@@ -21,7 +24,10 @@ export default function AboutUs() {
       </section>
 
       {/* Services Section */}
-      <section aria-labelledby="services-title" className="flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-12 items-center">
+      <section
+        aria-labelledby="services-title"
+        className="flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-12 items-center"
+      >
         <img
           src={transportImg}
           alt="A decorated Nganya matatu used for transport services"
@@ -37,7 +43,7 @@ export default function AboutUs() {
           </h3>
           <ul className="list-disc list-inside space-y-1 sm:space-y-2 text-gray-300 text-sm sm:text-base">
             <li>Book matatus for weddings, funerals, and events.</li>
-            <li>Browse all matatu routes and their respective Nganya names (e.g., Mood – Embakasi).</li>
+            <li>Browse all matatu routes and their respective Nganya names.</li>
             <li>Buy exclusive branded shirts featuring iconic Nganya designs.</li>
             <li>Submit complaints or compliments via email or phone.</li>
           </ul>
@@ -77,11 +83,16 @@ export default function AboutUs() {
           </a>
         </p>
 
-        <p className="text-sm sm:text-base text-gray-300">Office Location: Nairobi, Kenya</p>
+        <p className="text-sm sm:text-base text-gray-300">
+          Office Location: Nairobi, Kenya
+        </p>
       </section>
 
       {/* Merchandise Section */}
-      <section aria-labelledby="merch-title" className="flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-12 items-center">
+      <section
+        aria-labelledby="merch-title"
+        className="flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-12 items-center"
+      >
         <img
           src={merchandiseImg}
           alt="Nganya-themed merchandise including branded shirts"

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Card from "../../common/Card";
 import { nganyas } from "../../../data/nganyaData";
@@ -7,6 +7,8 @@ export default function Hero() {
   const [displayedText, setDisplayedText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
+
+  const [shuffledNganyas, setShuffledNganyas] = useState(nganyas);
 
   const catchyWords = [
     "Experience Nairobi's Nganya Era",
@@ -34,10 +36,22 @@ export default function Hero() {
     return () => clearTimeout(timeout);
   }, [charIndex, wordIndex]);
 
+  // Shuffle every 10 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShuffledNganyas((prev) => {
+        const newOrder = [...prev].sort(() => Math.random() - 0.5);
+        return newOrder;
+      });
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="home"
-      className="relative flex flex-col justify-start pt-28 sm:pt-32 md:pt-36 pb-10 text-center px-4 sm:px-6"
+      className="relative flex flex-col justify-start pt-32 pb-32 text-center px-4 sm:px-6"
     >
       {/* TOP CONTENT */}
       <div className="relative z-10 max-w-3xl mx-auto">
@@ -53,15 +67,12 @@ export default function Hero() {
         </h2>
 
         {/* TYPING EFFECT */}
-        <h3
-          className="text-md md:text-lg text-blue-400 mb-10 h-8 font-bold"
-          aria-live="polite"
-        >
+        <h3 className="text-md md:text-lg text-blue-400 mb-10 h-8 font-bold">
           {displayedText}
           <span className="animate-blink">|</span>
         </h3>
 
-        {/* BUTTONS */}
+        {/* BUTTON */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <motion.button
             whileHover={{ scale: 1.08, rotate: -1 }}
@@ -73,17 +84,26 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 🔥 NGANYA CARDS SECTION */}
+      {/* NGANYA CARDS */}
       <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto">
-        {nganyas.map((item, i) => (
-          <Card
-            key={i}
-            image={item.image}
-            name={item.name}
-            route={item.route}
-            sound={item.sound}
-          />
-        ))}
+        <AnimatePresence>
+          {shuffledNganyas.map((item) => (
+            <motion.div
+              key={item.name}
+              initial={{ opacity: 0, y: 20, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.9 }}
+              transition={{ duration: 0.4 }}
+            >
+              <Card
+                image={item.image}
+                name={item.name}
+                route={item.route}
+                sound={item.sound}
+              />
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
     </section>
   );

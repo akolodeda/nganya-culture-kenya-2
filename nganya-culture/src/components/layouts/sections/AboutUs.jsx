@@ -1,6 +1,6 @@
 import React from "react";
-import transportImg from "../../../assets/images/mood.jpg";
-import merchandiseImg from "../../../assets/images/shirt-merchandise.jpg";
+import transportImg from "../../../assets/images/mood.webp";
+import merchandiseImg from "../../../assets/images/shirt-merchandise.webp";
 
 export default function AboutUs() {
   return (
@@ -120,7 +120,7 @@ export default function AboutUs() {
       {/* Operational Details */}
       <section
         aria-labelledby="operations-title"
-        className="bg-gray-800 p-6 sm:p-8 md:p-10 rounded-lg shadow-md space-y-2"
+        className="bg-gray-800 p-6 sm:px-8 md:px-10 rounded-lg shadow-md space-y-2"
       >
         <h3
           id="operations-title"

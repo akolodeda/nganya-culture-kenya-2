@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 
-// Images
-import interiorImg from "../../../assets/images/interior.JPG";
-import lightsImg from "../../../assets/images/lights.jpg";
-import soundImg from "../../../assets/images/sound.jpg";
-import rimsImg from "../../../assets/images/rims.JPG";
-
+// Correct WEBP images
+import interiorImg from "../../../assets/images/interior.webp";
+import lightsImg from "../../../assets/images/lights.webp";
+import soundImg from "../../../assets/images/sound.webp";
+import rimsImg from "../../../assets/images/rims.webp";
 
 export default function Style() {
   const items = [

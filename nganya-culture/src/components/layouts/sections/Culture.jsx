@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 // Use SimpleCard instead of animated/sound Card
 import SimpleCard from "../../common/SimpleCard.jsx";
 
-// Correct asset paths
-import defaultBg from "../../../assets/images/background.jpg";
-import moodImg from "../../../assets/images/mood.jpg";
-import diceImg from "../../../assets/images/dice.jpg";
-import matatuImg from "../../../assets/images/matatu.jpg";
+// Correct asset paths (.webp)
+import defaultBg from "../../../assets/images/background.webp";
+import moodImg from "../../../assets/images/mood.webp";
+import diceImg from "../../../assets/images/dice.webp";
+import matatuImg from "../../../assets/images/matatu.webp";
 
 export default function Culture() {
   const [bgImage, setBgImage] = useState(defaultBg);
@@ -45,7 +45,6 @@ export default function Culture() {
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-
         <h2
           id="culture-title"
           className="font-street text-yellow-400 text-4xl sm:text-5xl lg:text-6xl mb-6 drop-shadow-xl"
@@ -70,7 +69,6 @@ export default function Culture() {
             />
           ))}
         </div>
-
       </div>
     </section>
   );

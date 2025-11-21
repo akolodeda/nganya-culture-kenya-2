@@ -1,8 +1,8 @@
-// Import images
-import kixxNgong from "../assets/images/kixx-ngong.jpg";
-import godfatherPipeline from "../assets/images/godfather-pipeline.jpg";
-import moodEmbakasi from "../assets/images/mood-embakasi.jpg";
-import oppositeUmoja from "../assets/images/opposite-umoja.jpg";
+// Import images (WEBP optimized)
+import kixxNgong from "../assets/images/kixx.webp";
+import godfatherPipeline from "../assets/images/godfather.webp";
+import moodEmbakasi from "../assets/images/mood-embakasi.webp";
+import oppositeUmoja from "../assets/images/opposite-umoja.webp";
 
 export const nganyas = [
   {

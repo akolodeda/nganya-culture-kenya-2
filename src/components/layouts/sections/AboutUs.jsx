@@ -30,7 +30,11 @@ export default function AboutUs() {
       >
         <img
           src={transportImg}
+<<<<<<< HEAD
           alt="Decorated Nganya matatu used for transport services"
+=======
+          alt="A decorated Nganya matatu used for transport services"
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
           loading="lazy"
           className="rounded-lg shadow-lg w-full md:w-1/2 object-cover"
         />
@@ -64,35 +68,53 @@ export default function AboutUs() {
 
         <p className="text-sm sm:text-base text-gray-300">
           Email (official):{" "}
+<<<<<<< HEAD
           <a
             href="mailto:nganyaculture@gmail.com"
             className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
           >
+=======
+          <a href="mailto:nganyaculture@gmail.com" className="text-blue-400 hover:underline">
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
             nganyaculture@gmail.com
           </a>
         </p>
 
         <p className="text-sm sm:text-base text-gray-300">
           Alternate Email:{" "}
+<<<<<<< HEAD
           <a
             href="mailto:akolomichael3@gmail.com"
             className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
           >
+=======
+          <a href="mailto:akolomichael3@gmail.com" className="text-blue-400 hover:underline">
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
             akolomichael3@gmail.com
           </a>
         </p>
 
         <p className="text-sm sm:text-base text-gray-300">
           Phone:{" "}
+<<<<<<< HEAD
           <a
             href="tel:+254798990428"
             className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
           >
+=======
+          <a href="tel:+254798990428" className="text-blue-400 hover:underline">
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
             0798 990 428
           </a>
         </p>
 
+<<<<<<< HEAD
         <p className="text-sm sm:text-base text-gray-300">Office Location: Nairobi, Kenya</p>
+=======
+        <p className="text-sm sm:text-base text-gray-300">
+          Office Location: Nairobi, Kenya
+        </p>
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
       </section>
 
       {/* Merchandise Section */}
@@ -127,7 +149,11 @@ export default function AboutUs() {
       {/* Operational Details */}
       <section
         aria-labelledby="operations-title"
+<<<<<<< HEAD
         className="bg-gray-800 p-6 sm:p-8 md:p-10 rounded-lg shadow-md space-y-2"
+=======
+        className="bg-gray-800 p-6 sm:px-8 md:px-10 rounded-lg shadow-md space-y-2"
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
       >
         <h3
           id="operations-title"

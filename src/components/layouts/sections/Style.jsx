@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 
+<<<<<<< HEAD
 // Images
+=======
+// Correct WEBP images
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
 import interiorImg from "../../../assets/images/interior.webp";
 import lightsImg from "../../../assets/images/lights.webp";
 import soundImg from "../../../assets/images/sound.webp";
@@ -35,9 +39,13 @@ export default function Style() {
       id="style"
       className="min-h-screen bg-gray-900 text-white px-6 py-20 text-center"
     >
+<<<<<<< HEAD
       <h2
         className="font-street text-yellow-400 text-4xl sm:text-5xl lg:text-6xl mb-8 drop-shadow-lg"
       >
+=======
+      <h2 className="font-street text-yellow-400 text-4xl sm:text-5xl lg:text-6xl mb-8 drop-shadow-lg">
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
         Street Style & Vibes
       </h2>
 
@@ -58,11 +66,20 @@ export default function Style() {
                 src={item.img}
                 alt={item.title}
                 className="w-full h-full object-cover"
+<<<<<<< HEAD
                 loading="lazy"
               />
             </div>
 
             <h3 className="text-2xl font-bold text-yellow-300">{item.title}</h3>
+=======
+              />
+            </div>
+
+            <h3 className="text-2xl font-bold text-yellow-300">
+              {item.title}
+            </h3>
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
 
             <p className="mt-2 text-white/70 text-sm leading-relaxed">
               {item.desc}

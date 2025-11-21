@@ -22,4 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 node_modules/
+=======
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)

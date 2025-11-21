@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+<<<<<<< HEAD
 import SimpleCard from "../../common/SimpleCard.jsx";
 
 // Correct asset paths
+=======
+
+// Use SimpleCard instead of animated/sound Card
+import SimpleCard from "../../common/SimpleCard.jsx";
+
+// Correct asset paths (.webp)
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
 import defaultBg from "../../../assets/images/background.webp";
 import moodImg from "../../../assets/images/mood.webp";
 import diceImg from "../../../assets/images/dice.webp";
@@ -63,7 +71,10 @@ export default function Culture() {
               key={img.id}
               image={img.src}
               title={img.title}
+<<<<<<< HEAD
               alt={img.title} // added alt for accessibility & SEO
+=======
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
               onClick={() => setBgImage(img.src)}
             />
           ))}

@@ -2,7 +2,16 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
+<<<<<<< HEAD
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+=======
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
@@ -13,6 +22,10 @@ export default function Contact() {
     e.preventDefault();
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -32,6 +45,7 @@ export default function Contact() {
 
       {/* Contact Details */}
       <div className="mb-12 flex flex-col sm:flex-row flex-wrap gap-10 justify-center text-center sm:text-left max-w-4xl">
+<<<<<<< HEAD
         {[
           { title: "Email", content: (
             <>
@@ -50,6 +64,51 @@ export default function Contact() {
       </div>
 
       {/* Contact Form */}
+=======
+        <motion.div whileHover={{ scale: 1.05 }} className="flex-1">
+          <h3 className="text-2xl font-semibold text-yellow-400 mb-2">Email</h3>
+          <p>
+            Official:{" "}
+            <a
+              href="mailto:nganyaculture@gmail.com"
+              className="text-blue-400 hover:underline"
+            >
+              nganyaculture@gmail.com
+            </a>
+          </p>
+          <p>
+            Alternate:{" "}
+            <a
+              href="mailto:akolomichael3@gmail.com"
+              className="text-blue-400 hover:underline"
+            >
+              akolomichael3@gmail.com
+            </a>
+          </p>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.05 }} className="flex-1">
+          <h3 className="text-2xl font-semibold text-yellow-400 mb-2">Phone</h3>
+          <p>
+            <a
+              href="tel:+254798990428"
+              className="text-blue-400 hover:underline"
+            >
+              +254 798 990 428
+            </a>
+          </p>
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.05 }} className="flex-1">
+          <h3 className="text-2xl font-semibold text-yellow-400 mb-2">
+            Location
+          </h3>
+          <p>Nairobi, Kenya</p>
+        </motion.div>
+      </div>
+
+      {/* Form */}
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
       <motion.form
         onSubmit={handleSubmit}
         className="w-full max-w-2xl bg-gray-900 p-6 sm:p-8 rounded-xl shadow-lg space-y-4"
@@ -57,6 +116,7 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
+<<<<<<< HEAD
         {["name", "email", "message"].map((field) => (
           <React.Fragment key={field}>
             <label htmlFor={field} className="sr-only">{field}</label>
@@ -85,6 +145,49 @@ export default function Contact() {
             )}
           </React.Fragment>
         ))}
+=======
+        <label htmlFor="name" className="sr-only">
+          Name
+        </label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-yellow-400 transition"
+          required
+        />
+
+        <label htmlFor="email" className="sr-only">
+          Email
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-yellow-400 transition"
+          required
+        />
+
+        <label htmlFor="message" className="sr-only">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          value={formData.message}
+          onChange={handleChange}
+          rows={5}
+          className="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-yellow-400 transition"
+          required
+        />
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
 
         <button
           type="submit"
@@ -93,7 +196,15 @@ export default function Contact() {
           Send Message
         </button>
 
+<<<<<<< HEAD
         {submitted && <p className="text-green-400 text-sm pt-2">Message sent successfully!</p>}
+=======
+        {submitted && (
+          <p className="text-green-400 text-sm pt-2">
+            Message sent successfully!
+          </p>
+        )}
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
       </motion.form>
 
       {/* Social Links */}
@@ -103,6 +214,7 @@ export default function Contact() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
       >
+<<<<<<< HEAD
         {[
           { href: "https://facebook.com", label: "Facebook", color: "text-blue-500 hover:text-blue-400" },
           { href: "https://twitter.com", label: "Twitter", color: "text-blue-400 hover:text-blue-300" },
@@ -112,6 +224,31 @@ export default function Contact() {
             {social.label}
           </a>
         ))}
+=======
+        <a
+          href="https://facebook.com"
+          aria-label="Visit our Facebook page"
+          className="text-blue-500 hover:text-blue-400 transition"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://twitter.com"
+          aria-label="Visit our Twitter page"
+          className="text-blue-400 hover:text-blue-300 transition"
+        >
+          Twitter
+        </a>
+
+        <a
+          href="https://instagram.com"
+          aria-label="Visit our Instagram page"
+          className="text-pink-500 hover:text-pink-400 transition"
+        >
+          Instagram
+        </a>
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
       </motion.div>
     </section>
   );

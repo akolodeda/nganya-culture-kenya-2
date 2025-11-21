@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 // Import images
 import kixxNgong from "../assets/images/kixx-ngong.webp";
 import godfatherPipeline from "../assets/images/godfather-pipeline.webp";
+=======
+// Import images (WEBP optimized)
+import kixxNgong from "../assets/images/kixx.webp";
+import godfatherPipeline from "../assets/images/godfather.webp";
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
 import moodEmbakasi from "../assets/images/mood-embakasi.webp";
 import oppositeUmoja from "../assets/images/opposite-umoja.webp";
 

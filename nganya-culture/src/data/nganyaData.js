@@ -1,4 +1,4 @@
-// Import your images
+// Import images
 import kixxNgong from "../assets/images/kixx-ngong.jpg";
 import godfatherPipeline from "../assets/images/godfather-pipeline.jpg";
 import moodEmbakasi from "../assets/images/mood-embakasi.jpg";

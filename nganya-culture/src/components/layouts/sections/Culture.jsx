@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-// Correct path to Card.jsx
-import Card from "../../common/Card.jsx";
+// Use SimpleCard instead of animated/sound Card
+import SimpleCard from "../../common/SimpleCard.jsx";
 
 // Correct asset paths
 import defaultBg from "../../../assets/images/background.jpg";
@@ -25,7 +25,6 @@ export default function Culture() {
       aria-labelledby="culture-title"
       className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-28 text-center overflow-hidden"
     >
-
       {/* Background Image */}
       <motion.div
         key={bgImage}
@@ -63,7 +62,7 @@ export default function Culture() {
         {/* Image Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {images.map((img) => (
-            <Card
+            <SimpleCard
               key={img.id}
               image={img.src}
               title={img.title}

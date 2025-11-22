@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 
-// Correct WEBP images
+// Images
 import interiorImg from "../../../assets/images/interior.webp";
 import lightsImg from "../../../assets/images/lights.webp";
 import soundImg from "../../../assets/images/sound.webp";
 import rimsImg from "../../../assets/images/rims.webp";
+
 
 export default function Style() {
   const items = [

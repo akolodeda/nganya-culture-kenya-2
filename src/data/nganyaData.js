@@ -1,6 +1,6 @@
-// Import images (WEBP optimized)
-import kixxNgong from "../assets/images/kixx.webp";
-import godfatherPipeline from "../assets/images/godfather.webp";
+// Import images
+import kixxNgong from "../assets/images/kixx-ngong.webp";
+import godfatherPipeline from "../assets/images/godfather-pipeline.webp";
 import moodEmbakasi from "../assets/images/mood-embakasi.webp";
 import oppositeUmoja from "../assets/images/opposite-umoja.webp";
 

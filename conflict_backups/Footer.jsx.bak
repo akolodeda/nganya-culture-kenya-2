@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
 import { motion } from "framer-motion";
 import { Facebook, Instagram, Youtube } from "lucide-react";
 
@@ -8,8 +12,14 @@ export default function Footer() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="bg-black text-gray-300 pt-14 pb-10 px-6 mt-20 border-t border-gray-800 relative overflow-hidden"
+<<<<<<< HEAD
+      role="contentinfo"
+    >
+      {/* Background glow (optional: reduce motion if Lighthouse flags performance) */}
+=======
     >
       {/* Background glow (reduced CPU load) */}
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
       <motion.div
         className="absolute inset-0 opacity-15 blur-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-yellow-400"
         animate={{ opacity: [0.15, 0.22, 0.18] }}
@@ -18,6 +28,10 @@ export default function Footer() {
           repeat: Infinity,
           repeatType: "mirror",
         }}
+<<<<<<< HEAD
+        aria-hidden="true"
+=======
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
       />
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 relative z-10">
@@ -27,9 +41,14 @@ export default function Footer() {
             NGANYA CULTURE
           </h2>
           <p className="mt-3 text-sm text-gray-300 leading-relaxed">
+<<<<<<< HEAD
+            Bold. Vivid. Unapologetic. We showcase the heartbeat of Kenyan
+            matatu street culture — the art, the lights, the movement, the vibe.
+=======
             Bold. Vivid. Unapologetic.
             We showcase the heartbeat of Kenyan matatu street culture —
             the art, the lights, the movement, the vibe.
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
           </p>
         </div>
 
@@ -43,7 +62,14 @@ export default function Footer() {
                 whileHover={{ scale: 1.05, x: 4 }}
                 className="cursor-pointer hover:text-white transition"
               >
+<<<<<<< HEAD
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className="focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
+                >
+=======
                 <a href="#" className="focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded">
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
                   {item}
                 </a>
               </motion.li>
@@ -58,12 +84,26 @@ export default function Footer() {
           <address className="not-italic text-sm text-gray-300 space-y-1">
             <p>Nairobi, Kenya</p>
             <p>
+<<<<<<< HEAD
+              <a
+                href="mailto:info@nganyaculture.com"
+                className="hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
+              >
+=======
               <a href="mailto:info@nganyaculture.com" className="hover:text-white">
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
                 info@nganyaculture.com
               </a>
             </p>
             <p>
+<<<<<<< HEAD
+              <a
+                href="tel:+254700000000"
+                className="hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
+              >
+=======
               <a href="tel:+254700000000" className="hover:text-white">
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
                 +254 798 990 428
               </a>
             </p>
@@ -88,7 +128,14 @@ export default function Footer() {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="p-3 rounded-full bg-gray-900 relative group focus:ring-2 focus:ring-yellow-400"
               >
+<<<<<<< HEAD
+                <span
+                  className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-600 opacity-0 group-hover:opacity-100 blur-sm transition"
+                  aria-hidden="true"
+                ></span>
+=======
                 <span className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-300 via-pink-500 to-purple-600 opacity-0 group-hover:opacity-100 blur-sm transition"></span>
+>>>>>>> dd13ad5 (Add old project files excluding temp_backup)
 
                 <motion.div
                   animate={{ scale: [1, 1.05, 1] }}

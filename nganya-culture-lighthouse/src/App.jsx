@@ -13,12 +13,10 @@ export default function App() {
     <div className="min-h-screen flex flex-col bg-black text-white">
 
       {/* FIXED HEADER */}
-      <header>
-        <Header />
-      </header>
+      <Header />
 
       {/* PAGE CONTENT — ALL SECTIONS EXIST IN ONE PAGE */}
-      <main className="flex-1" role="main" aria-label="Main content of Nganya Culture website">
+      <main className="flex-1" role="main">
         <Hero />
         <AboutUs />
         <Culture />
@@ -26,10 +24,7 @@ export default function App() {
         <Contact />
       </main>
 
-      {/* FOOTER */}
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

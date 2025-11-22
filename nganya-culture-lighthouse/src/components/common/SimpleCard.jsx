@@ -3,19 +3,15 @@ import { motion } from "framer-motion";
 export default function SimpleCard({ image, title, onClick }) {
   return (
     <motion.div
-      role="button"
-      tabIndex={0}
-      aria-label={`View ${title}`}
-      onClick={onClick}
-      onKeyDown={(e) => { if(e.key === "Enter") onClick(); }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="cursor-pointer rounded-xl overflow-hidden shadow-lg bg-white/10 backdrop-blur-md border border-white/20 transition-transform focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      onClick={onClick}
+      className="cursor-pointer rounded-xl overflow-hidden shadow-lg bg-white/10 backdrop-blur-md border border-white/20 transition-transform"
     >
       {/* Image */}
       <img
         src={image}
-        alt={`Nganya ${title}`}
+        alt={title}
         loading="lazy"
         className="w-full h-48 object-cover"
       />

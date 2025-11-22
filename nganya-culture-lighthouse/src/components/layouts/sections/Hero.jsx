@@ -7,6 +7,7 @@ export default function Hero() {
   const [displayedText, setDisplayedText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
+
   const [shuffledNganyas, setShuffledNganyas] = useState(nganyas);
 
   const catchyWords = [
@@ -38,7 +39,10 @@ export default function Hero() {
   // Shuffle every 10 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setShuffledNganyas((prev) => [...prev].sort(() => Math.random() - 0.5));
+      setShuffledNganyas((prev) => {
+        const newOrder = [...prev].sort(() => Math.random() - 0.5);
+        return newOrder;
+      });
     }, 10000);
 
     return () => clearInterval(interval);
@@ -49,6 +53,7 @@ export default function Hero() {
       id="home"
       className="relative flex flex-col justify-start pt-32 pb-32 text-center px-4 sm:px-6"
     >
+      {/* TOP CONTENT */}
       <div className="relative z-10 max-w-3xl mx-auto">
 
         {/* MAIN HEADING */}
@@ -62,24 +67,20 @@ export default function Hero() {
         </h2>
 
         {/* TYPING EFFECT */}
-        <h3
-          className="text-md md:text-lg text-blue-400 mb-10 h-8 font-bold"
-          aria-live="polite"
-        >
+        <h3 className="text-md md:text-lg text-blue-400 mb-10 h-8 font-bold">
           {displayedText}
-          <span className="animate-blink" aria-hidden="true">|</span>
+          <span className="animate-blink">|</span>
         </h3>
 
         {/* BUTTON */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <motion.a
+          <motion.button
             whileHover={{ scale: 1.08, rotate: -1 }}
             whileTap={{ scale: 0.95 }}
-            href="#culture"
-            className="px-8 py-3 rounded-xl bg-green-900 hover:bg-blue-900 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="px-8 py-3 rounded-xl bg-green-900 hover:bg-blue-900 text-white font-semibold"
           >
-            Explore The Movement
-          </motion.a>
+            Explore The Movement 👉
+          </motion.button>
         </div>
       </div>
 
@@ -99,7 +100,6 @@ export default function Hero() {
                 name={item.name}
                 route={item.route}
                 sound={item.sound}
-                alt={`Nganya Matatu ${item.name}`} // Added alt for accessibility
               />
             </motion.div>
           ))}

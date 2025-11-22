@@ -30,7 +30,7 @@ export default function AboutUs() {
       >
         <img
           src={transportImg}
-          alt="Decorated Nganya matatu used for transport services"
+          alt="A decorated Nganya matatu used for transport services"
           loading="lazy"
           className="rounded-lg shadow-lg w-full md:w-1/2 object-cover"
         />
@@ -64,35 +64,28 @@ export default function AboutUs() {
 
         <p className="text-sm sm:text-base text-gray-300">
           Email (official):{" "}
-          <a
-            href="mailto:nganyaculture@gmail.com"
-            className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
-          >
+          <a href="mailto:nganyaculture@gmail.com" className="text-blue-400 hover:underline">
             nganyaculture@gmail.com
           </a>
         </p>
 
         <p className="text-sm sm:text-base text-gray-300">
           Alternate Email:{" "}
-          <a
-            href="mailto:akolomichael3@gmail.com"
-            className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
-          >
+          <a href="mailto:akolomichael3@gmail.com" className="text-blue-400 hover:underline">
             akolomichael3@gmail.com
           </a>
         </p>
 
         <p className="text-sm sm:text-base text-gray-300">
           Phone:{" "}
-          <a
-            href="tel:+254798990428"
-            className="text-blue-400 hover:underline focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded"
-          >
+          <a href="tel:+254798990428" className="text-blue-400 hover:underline">
             0798 990 428
           </a>
         </p>
 
-        <p className="text-sm sm:text-base text-gray-300">Office Location: Nairobi, Kenya</p>
+        <p className="text-sm sm:text-base text-gray-300">
+          Office Location: Nairobi, Kenya
+        </p>
       </section>
 
       {/* Merchandise Section */}

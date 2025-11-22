@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+
+// Use SimpleCard instead of animated/sound Card
 import SimpleCard from "../../common/SimpleCard.jsx";
 
 // Correct asset paths
@@ -43,6 +45,7 @@ export default function Culture() {
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-center">
+
         <h2
           id="culture-title"
           className="font-street text-yellow-400 text-4xl sm:text-5xl lg:text-6xl mb-6 drop-shadow-xl"
@@ -63,11 +66,11 @@ export default function Culture() {
               key={img.id}
               image={img.src}
               title={img.title}
-              alt={img.title} // added alt for accessibility & SEO
               onClick={() => setBgImage(img.src)}
             />
           ))}
         </div>
+
       </div>
     </section>
   );

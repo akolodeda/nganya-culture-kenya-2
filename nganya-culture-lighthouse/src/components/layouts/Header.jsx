@@ -22,17 +22,15 @@ export default function Header({ activeSection, setActiveSection }) {
 
         {/* Mobile Menu Button */}
         <button
-          className="text-white sm:hidden block focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 rounded"
+          className="text-white sm:hidden block"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation menu"
-          aria-expanded={isOpen ? "true" : "false"}
-          aria-controls="mobile-menu"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden sm:block" aria-label="Primary navigation">
+        <nav className="hidden sm:block">
           <Navigation
             activeSection={activeSection}
             setActiveSection={setActiveSection}
@@ -42,11 +40,7 @@ export default function Header({ activeSection, setActiveSection }) {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav
-          id="mobile-menu"
-          className="sm:hidden mt-3 bg-gray-800 rounded-lg py-3 px-4"
-          aria-label="Mobile navigation"
-        >
+        <nav className="sm:hidden mt-3 bg-gray-800 rounded-lg py-3 px-4">
           <Navigation
             activeSection={activeSection}
             setActiveSection={setActiveSection}
